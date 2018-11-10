@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "user": "dauda",
+      "email": "dauda933@gmail.com",
+      "pass": "dauda",
+      "id": 1
+    },
+    {
+      "user": "dauda",
+      "email": "dauda1995@yahoo.co.uk",
+      "pass": "kennedy",
+      "id": 2
+    },
+    {
+      "user": "dauda",
+      "email": "dauda933@gmail.com",
+      "pass": "dauda",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some ordinary comment",
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "body": "some superlative comment",
+      "postId": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
