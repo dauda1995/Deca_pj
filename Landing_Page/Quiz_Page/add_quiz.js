@@ -1,4 +1,17 @@
 $(document).ready(function(){
+    let ques = $('#question')
+    let opt1 = $('#opt_1')
+    let opt2 = $('#opt_2')
+    let opt3 = $('#opt_3')
+    let ans = $('#answer')
+
+    function clear(){
+        ques.val("")
+        opt1.val("")
+        opt2.val("")
+        opt3.val("")
+        ans.val("")
+    }
 
     function questionSet(question, choices, answer){
         this.question = question
@@ -36,16 +49,26 @@ $(document).ready(function(){
         //     },
         //     "answer": answerdiv,
        // }
-        let set1 = question_new
-        console.log(question_new);
-        console.log(question_new.choices)
-        alert(set1.question);
-        
-        post_method("http://localhost:3000/questions", set1)
-       // $.post('http://localhost:3000/questions', {name:'dauda'})
+        //let set1 = question_new
+        //console.log(question_new);
+        //console.log(question_new.choices)
+        //alert(set1.question);
+      
+          
+
+       
+        $.post('http://localhost:3000/questions', question_new, function(data){
+            clear()
+            alert('done!')
+        })
+
         
         
 
+    })
+
+    $('#testPage').click(function(){
+        alert('alright, Let\'s do this!')
     })
 
 
