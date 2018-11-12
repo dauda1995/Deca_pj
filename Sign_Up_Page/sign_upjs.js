@@ -17,7 +17,7 @@ $(document).ready(function(){
            // alert('still checking')
             status = false;
         }
-        }
+     }
         return status;
     }
    
@@ -51,7 +51,9 @@ $(document).ready(function(){
                 alert('no users')
                 arr=[]
                 $.post("http://localhost:3000/users",user)
-                export {emailstr}
+               // export {emailstr}
+                window.location = '../Landing_Page/Quiz_Page/quiz_page.html';
+                return false;
             }   
 
             

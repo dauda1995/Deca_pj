@@ -17,62 +17,12 @@
       "email": "daudagoogle@gmail.com",
       "pass": "dauda",
       "id": 3
-    },
-    {
-      "email": "dauda344@efrjfsr.adf",
-      "username": "emm.Adeboye",
-      "password": "",
-      "id": 4
-    },
-    {
-      "email": "dawefej@sfsr.com",
-      "username": "dauda933",
-      "password": "dictatir",
-      "id": 5
-    },
-    {
-      "email": "askdc@adsfkbm..cods",
-      "username": "dauda",
-      "password": "dauda",
-      "id": 6
-    },
-    {
-      "email": "dauda93@gmail.com",
-      "username": "zeeshan.shafiq",
-      "password": "dauda",
-      "id": 7
-    },
-    {
-      "email": "daud39w3@qej.3290",
-      "username": "dauda",
-      "password": "dauda",
-      "id": 8
-    },
-    {
-      "email": "dad",
-      "username": "dauda1995",
-      "password": "dauda",
-      "id": 9
     }
   ],
-  "comments": [
+  "questions": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    },
-    {
-      "id": 2,
-      "body": "some ordinary comment",
-      "postId": 2
-    },
-    {
-      "id": 3,
-      "body": "some superlative comment",
-      "postId": 3
+      "name": "dauda",
+      "id": 1
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
