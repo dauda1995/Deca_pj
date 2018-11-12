@@ -11,48 +11,76 @@
       "email": "dauda1995@yahoo.co.uk",
       "pass": "kennedy",
       "id": 2
+    },
+    {
+      "email": "dad@frelk.csedk",
+      "username": "dauda1995",
+      "password": "kenned",
+      "id": 3
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "id": 4
     }
   ],
   "questions": [
     {
       "question": "is javascript a strictly typed Language?",
-      "choices[opt_1]": "Yes",
-      "choices[opt_2]": "No",
-      "choices[opt_3]": "I don't know",
+      "a": "Yes",
+      "b": "No",
+      "c": "I don't know",
       "answer": "NO",
       "id": 1
     },
     {
       "question": "Is java related to javascript",
-      "choices[opt_1]": "yes",
-      "choices[opt_2]": "No",
-      "choices[opt_3]": "I don't know",
+      "a": "yes",
+      "b": "No",
+      "c": "I don't know",
       "answer": "No",
       "id": 3
     },
     {
       "question": "What is the latest version of ECMAScript?",
-      "choices[opt_1]": "ES4",
-      "choices[opt_2]": "ES6",
-      "choices[opt_3]": "PS4",
+      "a": "ES4",
+      "b": "ES6",
+      "c": "PS4",
       "answer": "ES6",
       "id": 4
     },
     {
       "question": "which is a not primitive data type?",
-      "choices[opt_1]": "let",
-      "choices[opt_2]": "null",
-      "choices[opt_3]": "Number",
+      "a": "let",
+      "b": "null",
+      "c": "Number",
       "answer": "Undefined",
       "id": 5
     },
     {
       "question": "what does the acronym \"AJAX\" mean?",
-      "choices[opt_1]": "asynchronous javascript and XML",
-      "choices[opt_2]": "advanced JSON asynchronised Xamari",
-      "choices[opt_3]": "asynchronous javascript and xcode",
+      "a": "asynchronous javascript and XML",
+      "b": "advanced JSON asynchronised Xamari",
+      "c": "asynchronous javascript and xcode",
       "answer": "asynchronous javascript and XML",
       "id": 6
+    },
+    {
+      "question": "is this working",
+      "a": "yes",
+      "b": "no",
+      "c": "i dont know",
+      "answer": "i dont know",
+      "id": 7
+    },
+    {
+      "question": "is javascript a strictly typed Language?",
+      "a": "yes",
+      "b": "No",
+      "c": "I don't know",
+      "answer": "No",
+      "id": 8
     }
   ]
 }

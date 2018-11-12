@@ -49,7 +49,7 @@ $(document).ready(function(){
     let passStr = user.password
 
     if((passwordId !=='empty') && (usernameId.match( /^[^\s@]+@[^\s@]+\.[^\s@]+$/))){
-        alert('Login successful')
+        
 
         $.get(' http://localhost:3000/users', function(data){
             alert('okay, this too')
@@ -60,11 +60,12 @@ $(document).ready(function(){
                 alert(single.pass)
             })
              if((find_email(emailstr)==true) && (find_password(passStr) == true)){
+                alert('Login successful')
                 alert('welcome bro')
                 arr = []
                 arr2 = []
                 window.location = 'Quiz_Page/quiz_page.html';
-                return false;
+                //return false;
 
             }else{
                 alert('incorrect')

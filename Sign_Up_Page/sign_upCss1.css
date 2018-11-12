@@ -49,6 +49,11 @@ button:hover{
 
 .container {
     padding: 16px;
+    border:1px solid #ccc;
+    width: 50%;
+    
+
+    margin-left: 20%;
 }
 
 .clearfix::after {

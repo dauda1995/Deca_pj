@@ -38,17 +38,16 @@ $(document).ready(function(){
         let opt_3div = $('#opt_3').val()
         let answerdiv = $('#answer').val()
 
-        let options_new = new choiceSet(opt_1div, opt_2div, opt_3div)
-        let question_new = new questionSet(questdiv,options_new,answerdiv)
-        // let question_new = {
-        //     "question" : questdiv,
-        //     "choices" : {
-        //         "a": opt_1div,
-        //         "b": opt_2div,
-        //         "c": opt_3div,
-        //     },
-        //     "answer": answerdiv,
-       // }
+       // let options_new = new choiceSet(opt_1div, opt_2div, opt_3div)
+       // let question_new = new questionSet(questdiv,options_new,answerdiv)
+        let question_new = {
+            "question" : questdiv,
+              
+                "a": opt_1div,
+                "b": opt_2div,
+                "c": opt_3div,
+                "answer": answerdiv,
+       }
         //let set1 = question_new
         //console.log(question_new);
         //console.log(question_new.choices)

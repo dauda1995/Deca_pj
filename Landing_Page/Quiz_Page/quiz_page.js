@@ -1,37 +1,44 @@
 $(document).ready(function(){
 
-    let myQuestions = [
-     
-    ]
+    let myQuestions = []
 
-    function create_ques(questionId, optionsId, answerId){
-      this.questionId = questionId
-      this.optionsId = optionsId
-      this.answerId = answerId
-    }
+    
+    
     const quizContainer = document.getElementById('quiz');
     const resultsContainer = document.getElementById('results');
     const submitButton = document.getElementById('submit');
     
-  
+    $.get("http://localhost:3000/questions",function(data){
+        
+        //alert(data['choices'])
+        $.each(data, function(i, single){
+                myQuestions[i] = {
+                question : single.question,
+                answers:{
+                    a: single.a,
+                    b:single.b,
+                    c:single.c
+
+                },
+                correctAnswer: single.answer
+
+            }
+
+            
+           
+          
+        })
+        buildQuiz();
+        console.log(myQuestions)
+
+
+    })
 
     
 
-    $.get(" http://localhost:3000/questions", function(data){
-      $.each(data, function(i,single){
-        //alert(single.answers.a)
-        myQuestions.push(`{
-      question: ${single.question},
-      answers :{
-        a: "${single.answers.a}",
-        b : "${single.answers.b}",
-        c : "${single.answers.c}"
-      },
-      correctAnswer : "${single.correctAnswer}"
-     }`)
-            alert(myQuestions)
-      })
-      function buildQuiz(){
+
+    
+       function buildQuiz(){
         // we'll need a place to store the HTML output
         const output = [];
       
@@ -101,12 +108,12 @@ $(document).ready(function(){
         resultsContainer.innerHTML = numCorrect + ' out of ' + myQuestions.length;
       }
        submitButton.addEventListener('click', showResults);
-      buildQuiz();
+      
 
       
-    })
+ })
     
    
     
     
-    })
+    
