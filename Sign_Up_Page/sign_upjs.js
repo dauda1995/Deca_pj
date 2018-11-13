@@ -22,7 +22,7 @@ $(document).ready(function(){
     }
    
     $('.signbtn').click(function(){
-        alert( 'this is working')
+        //alert( 'this is working')
 
         //get user info from html elements
         let emailId = $('#email').val()
@@ -36,23 +36,23 @@ $(document).ready(function(){
                
         //get request to get users info from database
         $.get(' http://localhost:3000/users', function(data){
-            alert('okay, this too')
+           // alert('okay, this too')
             $.each(data, function(i,single){
                // alert(single.email)
                 arr.push(single.email)
             
             })
-            alert(arr)
+            //alert(arr)
            
             if(find_email(emailstr)==true){
                 alert('this user already exists')
                 arr = []
             }else{
-                alert('no users')
+                alert('Welcome! New user')
                 arr=[]
                 $.post("http://localhost:3000/users",user)
                //export {emailstr}
-                window.location = '../Landing_Page/Quiz_Page/quiz_page.html';
+                window.location = '../Landing_Page/Quiz_Page/add_quiz.html';
                 return false;
             }   
 

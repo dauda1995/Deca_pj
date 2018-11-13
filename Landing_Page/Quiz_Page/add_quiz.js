@@ -12,24 +12,29 @@ $(document).ready(function(){
         opt3.val("")
         ans.val("")
     }
+    let arr =[]
+   
 
-    function questionSet(question, choices, answer){
-        this.question = question
-        this.choices = choices
-        this.answer = answer
-    }
 
-    function choiceSet(opt_1, opt_2, opt_3){
-        this.opt_1 = opt_1
-        this.opt_2 = opt_2
-        this.opt_3 = opt_3
-    }
-    function post_method(url, data){
-        $.post(url,data, function(res){
-            alert('work finished')
+
+
+    // function questionSet(question, choices, answer){
+    //     this.question = question
+    //     this.choices = choices
+    //     this.answer = answer
+    // }
+
+    // function choiceSet(opt_1, opt_2, opt_3){
+    //     this.opt_1 = opt_1
+    //     this.opt_2 = opt_2
+    //     this.opt_3 = opt_3
+    // }
+    // function post_method(url, data){
+    //     $.post(url,data, function(res){
+    //         alert('work finished')
         
-        })
-    }
+    //     })
+    // }
 
     $('#submit').click(function(){
         let questdiv = $('#question').val()
@@ -70,5 +75,37 @@ $(document).ready(function(){
         alert('alright, Let\'s do this!')
     })
 
+   // $('#Update').click(function(){
+       $.get("http://localhost:3000/questions",function(data){
+           //alert('okay')
+           $.each(data, function(i, single){
+               arr[i] = {
+                   question : single.question,
+                   id: single.id
+
+               } 
+
+
+                            
+           })
+           console.log(arr)
+           for(let i=0; i<arr.length; i++){
+            $('#selectOps').append('<option value="' + arr[i].id + '">' + arr[i].question + '</option>');
+        }
+    
+       })   
+
+       $('#Update').click(function(){
+        let optionSelect = $('#selectOps').val();
+        alert(optionSelect)
+       })
+      
+
+
+   // }
+    //)
+
 
 })
+
+   

@@ -64,7 +64,7 @@ $(document).ready(function(){
                 alert('welcome bro')
                 arr = []
                 arr2 = []
-                window.location = 'Quiz_Page/quiz_page.html';
+                window.location = 'Quiz_Page/add_quiz.html';
                 //return false;
 
             }else{

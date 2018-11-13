@@ -18,11 +18,18 @@
       "password": "kenned",
       "id": 3
     },
+   
     {
-      "email": "",
-      "username": "",
-      "password": "",
-      "id": 4
+      "email": "dauda933567@fosx.comd",
+      "username": "dauda933",
+      "password": "dauda",
+      "id": 5
+    },
+    {
+      "email": "dauda302943@sdjs.sjfks",
+      "username": "dauda933@gmail.com",
+      "password": "d",
+      "id": 6
     }
   ],
   "questions": [
@@ -31,7 +38,7 @@
       "a": "Yes",
       "b": "No",
       "c": "I don't know",
-      "answer": "NO",
+      "answer": "b",
       "id": 1
     },
     {
@@ -39,7 +46,7 @@
       "a": "yes",
       "b": "No",
       "c": "I don't know",
-      "answer": "No",
+      "answer": "b",
       "id": 3
     },
     {
@@ -47,7 +54,7 @@
       "a": "ES4",
       "b": "ES6",
       "c": "PS4",
-      "answer": "ES6",
+      "answer": "b",
       "id": 4
     },
     {
@@ -63,7 +70,7 @@
       "a": "asynchronous javascript and XML",
       "b": "advanced JSON asynchronised Xamari",
       "c": "asynchronous javascript and xcode",
-      "answer": "asynchronous javascript and XML",
+      "answer": "a",
       "id": 6
     },
     {
@@ -79,8 +86,16 @@
       "a": "yes",
       "b": "No",
       "c": "I don't know",
-      "answer": "No",
+      "answer": "b",
       "id": 8
+    },
+    {
+      "question": "",
+      "a": "",
+      "b": "",
+      "c": "",
+      "answer": "",
+      "id": 9
     }
   ]
 }
