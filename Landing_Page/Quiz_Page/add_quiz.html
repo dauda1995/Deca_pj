@@ -68,75 +68,78 @@
                                  
                                 </div>
                               </nav>
-    
-                              
-                              
-        </div>
-    
-        
-                <h1 class="header"></h1>
-                
-                <div class="container">
-                    <label for="question"><b>Question</b></label>
-                    <input type="text" id = 'question' placeholder="Enter Question" name="question" required>
-        
-                    <label for="a"><b>Opt_1</b></label>
-                    <input type="text" id='opt_1' placeholder="Enter option" name="a" required>
-
-                    <label for="b"><b>Opt_2</b></label>
-                    <input type="text" id='opt_2' placeholder="Enter option" name="b" required>
-
-                    <label for="c"><b>Opt_3</b></label>
-                    <input type="text" id='opt_3' placeholder="Enter option" name="c" required>
-
-                    <label for="answer"><b>Answer</b></label>
-                    <input type="text" id='answer' placeholder="Enter Answer" name="answer" required>
-
-        
-                    <button type="submit" id = 'submit'>Submit</button>
-
-                    <label for="Updatequest"><b>Question</b></label>
-                    <input type="text" id = 'questionUpdate' placeholder="Enter Question" name="Updatequest" required>
-
-                    <button type="submit" id ='Update'>Update</button>
-
+                             
                     <label for="question" id='ops'><b>Question</b></label>
                     <select id='selectOps'>
                       <option value="volvo">....</option>
                       
                     </select>
-                    <button type="submit" id = 'delete'>Delete</button>
-
-                    <button type="button" class="cancelbtn">Cancel</button>
-                    
+    
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="Update">Update</button>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat" id="Delete">Delete</button>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" id="Add">Add Question</button><br><br><br><hr><br><br>
+                              
+                              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">Question:</label>
+                                          <input type="text" class="form-control" id="question">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">a:</label>
+                                          <input type="text" class="form-control" id="opt_1">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">b:</label>
+                                          <input type="text" class="form-control" id="opt_2">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">c:</label>
+                                          <input type="text" class="form-control" id="opt_3">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">Answer:</label>
+                                          <input type="text" class="form-control" id="answer">
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary" id="submitUpdate" data-dismiss="modal">Submit</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>        
+                              
+        </div>
+    
+        
+               
+                    <label for="question" id='ops'><b>Question</b></label>
+                    <select id='selectOps'>
+                      <option value="volvo">....</option>
                       
-                </div>
+                    </select>
+
+                    
+                                       
+                      
+                
 
                 
                
             
-            
-                <!-- <h1>Create a quiz</h1>
-                <div id = "formdiv">
-                    <label ><b>Question</b></label>
-                    <input id = 'question' name ='question'><br>
-                    <label for="a">option 1</label>
-                    <input type="text" id = "opt_1" name="a"><br>
-                    <label for="b">option 2</label>
-                    <input type="text" id = "opt_2" name="b"><br>
-                    <label for="c">option 3</label>
-                    <input type = "text" id = "opt_3" name="c"><br>
-
-                    <label for="answer">Answer</label>
-                    <input type="text" id="answer" name = "answer"><br>
-
-                    <button id = "submit">Submit</button>
- 
-            
-                </div>     -->
-
        
-        <div id = 'results'></div>
+       
 
         <script src="add_quiz.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

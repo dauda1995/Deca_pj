@@ -11,42 +11,15 @@
       "email": "dauda1995@yahoo.co.uk",
       "pass": "kennedy",
       "id": 2
-    },
-    {
-      "email": "dad@frelk.csedk",
-      "username": "dauda1995",
-      "password": "kenned",
-      "id": 3
-    },
-   
-    {
-      "email": "dauda933567@fosx.comd",
-      "username": "dauda933",
-      "password": "dauda",
-      "id": 5
-    },
-    {
-      "email": "dauda302943@sdjs.sjfks",
-      "username": "dauda933@gmail.com",
-      "password": "d",
-      "id": 6
     }
   ],
   "questions": [
     {
-      "question": "is javascript a strictly typed Language?",
-      "a": "Yes",
-      "b": "No",
-      "c": "I don't know",
-      "answer": "b",
-      "id": 1
-    },
-    {
       "question": "Is java related to javascript",
       "a": "yes",
-      "b": "No",
+      "b": "Nooooo!",
       "c": "I don't know",
-      "answer": "b",
+      "answer": "a",
       "id": 3
     },
     {
@@ -58,14 +31,6 @@
       "id": 4
     },
     {
-      "question": "which is a not primitive data type?",
-      "a": "let",
-      "b": "null",
-      "c": "Number",
-      "answer": "Undefined",
-      "id": 5
-    },
-    {
       "question": "what does the acronym \"AJAX\" mean?",
       "a": "asynchronous javascript and XML",
       "b": "advanced JSON asynchronised Xamari",
@@ -74,28 +39,20 @@
       "id": 6
     },
     {
-      "question": "is this working",
-      "a": "yes",
-      "b": "no",
-      "c": "i dont know",
-      "answer": "i dont know",
-      "id": 7
+      "question": "what is today?",
+      "a": "Monday",
+      "b": "Tuesday",
+      "c": "Check the calendar",
+      "answer": "c",
+      "id": 15
     },
     {
-      "question": "is javascript a strictly typed Language?",
-      "a": "yes",
-      "b": "No",
-      "c": "I don't know",
-      "answer": "b",
-      "id": 8
-    },
-    {
-      "question": "",
-      "a": "",
-      "b": "",
-      "c": "",
-      "answer": "",
-      "id": 9
+      "question": "what does the .pop() method do to an array?",
+      "a": "it deletes the first indexed value of array",
+      "b": "it adds a value to the last array index",
+      "c": "it destroys the last indexed array value",
+      "answer": "c",
+      "id": 16
     }
   ]
 }

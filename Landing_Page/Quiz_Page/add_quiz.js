@@ -4,6 +4,8 @@ $(document).ready(function(){
     let opt2 = $('#opt_2')
     let opt3 = $('#opt_3')
     let ans = $('#answer')
+    let urlq =""
+    
 
     function clear(){
         ques.val("")
@@ -13,38 +15,43 @@ $(document).ready(function(){
         ans.val("")
     }
     let arr =[]
-   
+   function append(question, opta, optb, optc, a){
+      
+    ques.val(question)
+    opt1.val(opta)
+    opt2.val(optb)
+    opt3.val(optc)
+    ans.val(a)
+   }
 
+//    jQuery.each(["put", "delete"], function(i, method){
+//    jQuery[method] = function(url, data, callback, type){
+//     if(jQuery.isFunction(data)){
+//         type = type || callback
+//         callback = data;
+//         data = undefined;
+//     }
+//     return jQuery.ajax({
+//         url: url,
+//         type: method,
+//         dataType: type,
+//         data: data,
+//         success: callback
+//     })
+//     }
+//    })
 
+   $('#Add').click(function(){
 
+    clear()
+    $('#submitUpdate').click(function(){
+        let questdiv = ques.val()
+        let opt_1div = opt1.val()
+        let opt_2div = opt2.val()
+        let opt_3div = opt3.val()
+        let answerdiv = ans.val()
 
-    // function questionSet(question, choices, answer){
-    //     this.question = question
-    //     this.choices = choices
-    //     this.answer = answer
-    // }
-
-    // function choiceSet(opt_1, opt_2, opt_3){
-    //     this.opt_1 = opt_1
-    //     this.opt_2 = opt_2
-    //     this.opt_3 = opt_3
-    // }
-    // function post_method(url, data){
-    //     $.post(url,data, function(res){
-    //         alert('work finished')
-        
-    //     })
-    // }
-
-    $('#submit').click(function(){
-        let questdiv = $('#question').val()
-        let opt_1div = $('#opt_1').val()
-        let opt_2div = $('#opt_2').val()
-        let opt_3div = $('#opt_3').val()
-        let answerdiv = $('#answer').val()
-
-       // let options_new = new choiceSet(opt_1div, opt_2div, opt_3div)
-       // let question_new = new questionSet(questdiv,options_new,answerdiv)
+      
         let question_new = {
             "question" : questdiv,
               
@@ -53,24 +60,15 @@ $(document).ready(function(){
                 "c": opt_3div,
                 "answer": answerdiv,
        }
-        //let set1 = question_new
-        //console.log(question_new);
-        //console.log(question_new.choices)
-        //alert(set1.question);
-      
-          
-
-       
         $.post('http://localhost:3000/questions', question_new, function(data){
-            clear()
-            alert('done!')
-        })
-
-        
-        
-
+             alert('done!')
+        }) 
+        clear()   
     })
 
+   })
+   
+    
     $('#testPage').click(function(){
         alert('alright, Let\'s do this!')
     })
@@ -93,17 +91,112 @@ $(document).ready(function(){
             $('#selectOps').append('<option value="' + arr[i].id + '">' + arr[i].question + '</option>');
         }
     
-       })   
+       }) 
+       //update data  
 
        $('#Update').click(function(){
         let optionSelect = $('#selectOps').val();
-        alert(optionSelect)
+        urlq = "http://localhost:3000/questions/" + optionSelect
+        $.get(urlq, function(data){
+            let ques=data.question
+            let opt1= data.a
+            let opt2 = data.b
+            let opt3 = data.c
+            let ans = data.answer
+        
+           
+            append(ques, opt1, opt2, opt3, ans)
+                      
+        })
+        //Submit updated data
+        $('#submitUpdate').click(function(){
+
+            let questdivu = ques.val()
+            let opt_1divu = opt1.val()
+            let opt_2divu = opt2.val()
+            let opt_3divu = opt3.val()
+            let answerdivu = ans.val()
+            alert(urlq)
+        
+            let updateQuestion = {
+                "question" : questdivu,
+                  
+                    "a": opt_1divu,
+                    "b": opt_2divu,
+                    "c": opt_3divu,
+                    "answer": answerdivu,
+           }
+           
+    
+           $.ajax({
+               type: 'PUT',
+               url: urlq,
+               data: updateQuestion,
+               dataType: 'JSON',
+               success: function(data){
+                   alert('done!')
+    
+               }
+           })
+         
+        
+        })
+
+        
        })
-      
+
+       $('#Delete').click(function(){
+        let optionSelect = $('#selectOps').val();
+        urlq = "http://localhost:3000/questions/" + optionSelect
+        $.get(urlq, function(data){
+            let ques=data.question
+            let opt1= data.a
+            let opt2 = data.b
+            let opt3 = data.c
+            let ans = data.answer
+        
+           
+            append(ques, opt1, opt2, opt3, ans)
+                      
+        })
+        $('#submitUpdate').click(function(){
+
+            let questdivu = ques.val()
+            let opt_1divu = opt1.val()
+            let opt_2divu = opt2.val()
+            let opt_3divu = opt3.val()
+            let answerdivu = ans.val()
+            alert(urlq)
+        
+            let updateQuestion = {
+                "question" : questdivu,
+                  
+                    "a": opt_1divu,
+                    "b": opt_2divu,
+                    "c": opt_3divu,
+                    "answer": answerdivu,
+           }
+           
+    
+           $.ajax({
+               type: 'DELETE',
+               url: urlq,
+               data: updateQuestion,
+               dataType: 'JSON',
+               success: function(data){
+                   alert('done!')
+    
+               }
+           })
+         
+        
+        })
 
 
-   // }
-    //)
+
+       })
+
+   
 
 
 })
