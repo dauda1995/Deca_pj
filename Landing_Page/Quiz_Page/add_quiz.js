@@ -1,9 +1,15 @@
 $(document).ready(function () {
 
     let userid = localStorage.getItem('idobj')
-    //alert(userid)
+    swal({
+        position: 'top-end',
+        type: 'success',
+        title: `${userid} is Signed In `,
+        showConfirmButton: false,
+        timer: 1500
+      })
     //alert(typeof (userid))
-    swal('Any fool can use a computer')
+   
     
 
     let ques = $('#question')

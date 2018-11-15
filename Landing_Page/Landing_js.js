@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
 
     let arr = []
     let arr2 = []
@@ -53,7 +54,7 @@ $(document).ready(function(){
         
 
         $.get(' http://localhost:3000/users', function(data){
-            alert('okay, this too')
+           // alert('okay, this too')
             $.each(data, function(i,single){
                // alert(single.email)
                // arr.push(single.email)
@@ -71,7 +72,7 @@ $(document).ready(function(){
                  localStorage.setItem('idobj', emailstr)
                  
                  
-                alert('Login successful')
+                swal('Login successful')
                // alert('welcome bro')
                 arr = []
                 arr2 = []
@@ -79,7 +80,12 @@ $(document).ready(function(){
                 //return false;
 
             }else{
-                alert('incorrect password or username')
+                // swal({
+                //     type: 'error',
+                //     title: 'Oops...',
+                //     text: 'Wrong Username or Password!',
+                //     footer: '<a href>Why do I have this issue?</a>'
+                //   })
                 arr = []
                 arr2 = []
             }
@@ -92,7 +98,12 @@ $(document).ready(function(){
             
        
     }else{
-        alert('incorrect password or username')
+        swal({
+            type: 'error',
+            title: 'Oops...',
+            text: 'Wrong Username or Password!',
+            footer: '<a href>Why do I have this issue?</a>'
+          })
     }
     
 

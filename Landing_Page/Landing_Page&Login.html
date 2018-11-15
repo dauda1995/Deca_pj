@@ -1,17 +1,14 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Landing_css.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src="Landing_js.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="Landing_css.css" />
+    
     
 </head>
 <body>
@@ -90,8 +87,129 @@
                           
                           
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../sweetalert2.all.min.js"></script>
+    <script src="Landing_js.js"></script>
+   
+  
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cinder and Ice</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="Landing_css.css" />
+    
+    
+</head>
+<body>
+
+    <div class = 'container'>
+
+           
+              <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">D3S</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+            
+             <h1 class="page-header">Welcome to Cinder Quiz<br><br><small>Make a quiz or test your capabilities</small></h1>
+             <hr>
+             <p class="lead">We provide quiz types to test your level of aptitude in all fields.
+                 you can make your own quiz or choose from a category of quiz sections already made by our wonderful developers</p>
+                 <p><mark>Check out our sister Page to join our community of able Quizzers</mark>, and contribute to the wonderful world of quiz- making.</p>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+            <p class="text-left text-capitalize">Take a Quiz</p>
+            <p class="text-left text-capitalize">Make a Quiz</p>
+            <p class="text-nowrap">Join our community</p>
+            <p class='text-left text-capitalize'><a href="../Sign_Up_Page/sign_uphtml1.html" id= 'signup'>Click here</a> to sign up</p>
+            </div>
+           <div class="col-md-4">
+                <div class="overall">
+
+                        <div class="form">
+                            <h1 class="header"></h1>
+                            
+                            <div class="container">
+                            <div class="col-md-2>
+                                <label for="username"><b>Username</b></label>
+                                 <input type="text" class="form-control" id = 'username' placeholder="Enter Username" name='username' aria-label="Small" aria-describedby="inputGroup-sizing-sm" required> 
+
+                               
+  
+  
+                    
+                                <label for="password"><b>Password</b></label>
+                               
+                                <input type="text" class="form-control" id = 'password' placeholder="Enter Password" name='password' aria-label="Small" aria-describedby="inputGroup-sizing-sm" required> 
+                    
+                               
+                                <button type="submit" class="btn btn-success" id="login">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+                    
+                            <div class="container" style="background-color:#f1f1f1">
+                               
+                                <button type="button" id="cancelbtn" class="btn btn-danger">Cancel</button>
+                                <span class="psw"> Forgot <a href="#">password?</a>
+                                </span>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+            </div>
+            
+            <blockquote class = 'blockquote-reverse'>
+                <p><em><i>Its not the Job that makes you a  but the problems you face</i></em></p>
+                <footer>Quote by <cite title="Dauda Oziegbe">Dauda Oziegbe</cite></footer>
+            </blockquote>
+            
+
+
+
+
+
+
+
+                          
+                          
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../sweetalert2.all.min.js"></script>
+    <script src="Landing_js.js"></script>
+   
+  
 </body>
 </html>

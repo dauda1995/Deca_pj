@@ -6,6 +6,17 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+/* body{
+    background: linear-gradient(#0000007c, #0000007c), url("../Login_Page/res/0000fe0123f8a2f29556a19b4094eb338286b76bd00dc03e5a7e64fbad4e1c91.jpg") no-repeat;
+    background-position: center right;
+
+} */
+
+.capitally{
+    font-weight: bolder;
+    
+}
+
 
 button{
     background-color: cadetblue;
@@ -17,7 +28,9 @@ button{
     width: 100%;
     
 }
-
+p.thick {
+    font-weight: bold;
+}
 button:hover{
     opacity: 0.8;
 }

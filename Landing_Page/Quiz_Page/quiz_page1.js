@@ -2,16 +2,10 @@ $(document).ready(function(){
   let userid = localStorage.getItem('idobj')
   //alert(userid)
  // alert(typeof (userid))
- //swal('Any fool can use a computer')
-
+ swal('Any fool can use a computer')
+ 
 
     let myQuestions = [];
-
-    
-
-
-    
-    
     let quizContainer = document.getElementById('quiz');
     let resultsContainer = document.getElementById('results');
     let submitButton = document.getElementById('submit');
@@ -28,24 +22,14 @@ $(document).ready(function(){
                     a: single.a,
                     b:single.b,
                     c:single.c,
-                   
-
                 },
                 correctAnswer: single.answer,
                 email: single.email
 
             }
 
-            buildQuiz();   
-           
-          
+            buildQuiz();             
        })
-        
-       
-        
-       
-        
-
     })
 
      

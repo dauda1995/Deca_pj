@@ -13,12 +13,6 @@
       "id": 2
     },
     {
-      "email": "",
-      "username": "",
-      "password": "",
-      "id": 3
-    },
-    {
       "email": "dauda1996@gmail.com",
       "username": "dauda78",
       "password": "dauda",
@@ -78,15 +72,6 @@
       "id": 6
     },
     {
-      "question": "what is today?",
-      "a": "Monday",
-      "b": "Tuesday",
-      "c": "Check the calendar",
-      "answer": "c",
-      "email": "dauda933@gmail.com",
-      "id": 15
-    },
-    {
       "question": "what does the .pop() method do to an array?",
       "a": "it deletes the first indexed value of array",
       "b": "it adds a value to the last array index",
@@ -130,6 +115,15 @@
       "answer": "c",
       "email": "",
       "id": 20
+    },
+    {
+      "question": "what is today?",
+      "a": "Monday",
+      "b": "Tuesday",
+      "c": "Check the calendar",
+      "answer": "c",
+      "email": "dauda933@gmail.com",
+      "id": 21
     }
   ]
 }
