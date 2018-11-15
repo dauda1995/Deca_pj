@@ -5,16 +5,16 @@ $(document).ready(function(){
  //swal('Any fool can use a computer')
 
 
-    const myQuestions = [];
+    let myQuestions = [];
 
     
 
 
     
     
-    const quizContainer = document.getElementById('quiz');
-    const resultsContainer = document.getElementById('results');
-    const submitButton = document.getElementById('submit');
+    let quizContainer = document.getElementById('quiz');
+    let resultsContainer = document.getElementById('results');
+    let submitButton = document.getElementById('submit');
 
     
     
@@ -50,19 +50,19 @@ $(document).ready(function(){
 
      
        function buildQuiz(){
-        // we'll need a place to store the HTML output
-        const output = [];
+        
+        let output = [];
       
-        // for each question...
+        
         myQuestions.forEach(
           (currentQuestion, questionNumber) => {
             // we'll want to store the list of answer choices
-            const answers = [];
+            let answers = [];
       
-            // and for each available answer...
+            // and for each answer...
             for(letter in currentQuestion.answers){
       
-              // ...add an HTML radio button
+              // add radio button
               answers.push(
                 `<br><label>
                   <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -72,7 +72,7 @@ $(document).ready(function(){
               );
             }
       
-            // add this question and its answers to the output
+            // add this question and its options to the output
             output.push(
 
               `<br><div class="question"> ${currentQuestion.question} </div>
@@ -82,7 +82,7 @@ $(document).ready(function(){
           }
         );
       
-        // finally combine our output list into one string of HTML and put it on the page
+        //  combine our output list into one string of HTML and put it on the page
         quizContainer.innerHTML = output.join('');
       }
 
@@ -91,7 +91,7 @@ $(document).ready(function(){
       function showResults(){
       
         // gather answer containers from our quiz
-        const answerContainers = quizContainer.querySelectorAll('.answers');
+        let answerContainers = quizContainer.querySelectorAll('.answers');
       
         // keep track of user's answers
         let numCorrect = 0;
@@ -100,9 +100,9 @@ $(document).ready(function(){
         myQuestions.forEach( (currentQuestion, questionNumber) => {
       
           // find selected answer
-          const answerContainer = answerContainers[questionNumber];
-          const selector = 'input[name=question'+questionNumber+']:checked';
-          const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+          let answerContainer = answerContainers[questionNumber];
+          let selector = 'input[name=question'+questionNumber+']:checked';
+          let userAnswer = (answerContainer.querySelector(selector) || {}).value;
       
           // if answer is correct
           if(userAnswer===currentQuestion.correctAnswer){
@@ -110,13 +110,14 @@ $(document).ready(function(){
             numCorrect++;
       
             // color the answers green
-            answerContainers[questionNumber].style.color = 'lightgreen';
+            answerContainers[questionNumber].style.backgroundColor = 'lightgreen';
+            
         
           }
           // if answer is wrong or blank
           else{
             // color the answers red
-            answerContainers[questionNumber].style.color = 'red';
+            answerContainers[questionNumber].style.backgroundColor = 'red';
           }
         });
       
