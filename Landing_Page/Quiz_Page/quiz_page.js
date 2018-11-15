@@ -81,7 +81,8 @@ function checkanswer(){
 
 
     })
-    resultContainer.innerHtml = numCorrect + 'out of ' + myQuestions.length
+    resultContainer.innerHtml = numCorrect + 'out of ' + myQuestions.length + "\n" + "answers:" ;
+    
 }
     submitButton.on(click, showResults)
 })

@@ -111,7 +111,7 @@ $(document).ready(function(){
       
             // color the answers green
             answerContainers[questionNumber].style.backgroundColor = 'lightgreen';
-            
+
         
           }
           // if answer is wrong or blank
@@ -123,6 +123,8 @@ $(document).ready(function(){
       
         // show number of correct answers out of total
         resultsContainer.innerHTML = numCorrect + ' out of ' + myQuestions.length;
+        document.getElementById("ans").innerHTML = `answers:
+                `;
       }
        submitButton.addEventListener('click', showResults);
    
