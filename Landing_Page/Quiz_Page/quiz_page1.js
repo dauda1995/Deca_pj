@@ -1,4 +1,9 @@
 $(document).ready(function(){
+  let userid = localStorage.getItem('idobj')
+  //alert(userid)
+ // alert(typeof (userid))
+ //swal('Any fool can use a computer')
+
 
     const myQuestions = [];
 
@@ -22,10 +27,12 @@ $(document).ready(function(){
                 answers:{
                     a: single.a,
                     b:single.b,
-                    c:single.c
+                    c:single.c,
+                   
 
                 },
-                correctAnswer: single.answer
+                correctAnswer: single.answer,
+                email: single.email
 
             }
 
@@ -117,7 +124,13 @@ $(document).ready(function(){
         resultsContainer.innerHTML = numCorrect + ' out of ' + myQuestions.length;
       }
        submitButton.addEventListener('click', showResults);
-     
+   
+       $('#logoutbtn').click(function(){
+        localStorage.clear();
+        window.location = '../Landing_page&Login.html';
+        return false;
+    })
+
 
       
  })

@@ -11,6 +11,42 @@
       "email": "dauda1995@yahoo.co.uk",
       "pass": "kennedy",
       "id": 2
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "email": "dauda1996@gmail.com",
+      "username": "dauda78",
+      "password": "dauda",
+      "id": 4
+    },
+    {
+      "email": "dauda1995@yahoo.co.ukd",
+      "username": "dauda933@gmail.com",
+      "password": "",
+      "id": 5
+    },
+    {
+      "email": "daudagoogle234@gmail.com",
+      "username": "dauda",
+      "password": "dauda",
+      "id": 8
+    },
+    {
+      "email": "daudagoogle.io@gmail.com",
+      "username": "new user",
+      "password": "kennedyy",
+      "id": 9
+    },
+    {
+      "email": "daudagoogle23@gmail.com",
+      "username": "dauda",
+      "password": "kennedyy",
+      "id": 10
     }
   ],
   "questions": [
@@ -20,6 +56,7 @@
       "b": "Nooooo!",
       "c": "I don't know",
       "answer": "a",
+      "email": "dauda933@gmail.com",
       "id": 3
     },
     {
@@ -28,6 +65,7 @@
       "b": "ES6",
       "c": "PS4",
       "answer": "b",
+      "email": "dauda933@gmail.com",
       "id": 4
     },
     {
@@ -36,6 +74,7 @@
       "b": "advanced JSON asynchronised Xamari",
       "c": "asynchronous javascript and xcode",
       "answer": "a",
+      "email": "dauda933@gmail.com",
       "id": 6
     },
     {
@@ -44,6 +83,7 @@
       "b": "Tuesday",
       "c": "Check the calendar",
       "answer": "c",
+      "email": "dauda933@gmail.com",
       "id": 15
     },
     {
@@ -52,7 +92,44 @@
       "b": "it adds a value to the last array index",
       "c": "it destroys the last indexed array value",
       "answer": "c",
+      "email": "dauda933@gmail.com",
       "id": 16
+    },
+    {
+      "question": "is localStorage a good idea?",
+      "a": "nope",
+      "b": "have you tried it",
+      "c": "yes",
+      "answer": "c",
+      "email": "dauda933@gmail.com",
+      "id": 17
+    },
+    {
+      "question": "what does the time and space relativity explain?",
+      "a": "time is not absolute",
+      "b": "space determines how time is percieved",
+      "c": "stop this nonsense!",
+      "answer": "a",
+      "email": "dauda1995@yahoo.co.uk",
+      "id": 18
+    },
+    {
+      "question": "are 'let' datatypes constant?",
+      "a": "yes",
+      "b": "no",
+      "c": "maybe",
+      "answer": "b",
+      "email": "dauda1995@yahoo.co.uk",
+      "id": 19
+    },
+    {
+      "question": "is this working for real",
+      "a": "yes",
+      "b": "no",
+      "c": "check",
+      "answer": "c",
+      "email": "",
+      "id": 20
     }
   ]
 }

@@ -8,42 +8,43 @@ $(document).ready(function(){
     }
 
     //validator against server data
-    function find_email(str){
+    function find_email(str, pstr){
+        // alert(arr[0].emailt)
+        // alert(arr[0].passwordt)
         let status = true;
         for( let i = 0; i<arr.length;i++){
-            if(arr[i] == str){
-               // alert('this user already exists')
+            if((arr[i].emailt == str) && (arr[i].passwordt ==pstr)){
                 status = true;
                 break;
-                
+                               
         }else{
-           // alert('still checking')
+           
             status = false;
         }
         }
         return status;
     }
-    function find_password(passw){
-        let status = true;
-        for( let i = 0; i<arr2.length;i++){
-            if(arr2[i] == passw){
-               // alert('this user already exists')
-                status = true;
-                break;
+    // function find_password(passw){
+    //     let status = true;
+    //     for( let i = 0; i<arr2.length;i++){
+    //         if(arr2[i]== passw){
+              
+    //             status = true;
+    //             break;
                 
-        }else{
-           // alert('still checking')
-            status = false;
-        }
-        }
-        return status;
-    }
+    //     }else{
+           
+    //         status = false;
+    //     }
+    //     }
+    //     return status;
+    // }
 
    $('#login').click(function(){
     var usernameId = $('#username').val();
     var passwordId = $('#password').val();
-    //alert(username)
-    //alert(password)
+    
+    
     var user = new usersInfo(usernameId, passwordId)
     let emailstr = user.email
     let passStr = user.password
@@ -55,20 +56,30 @@ $(document).ready(function(){
             alert('okay, this too')
             $.each(data, function(i,single){
                // alert(single.email)
-                arr.push(single.email)
-                arr2.push(single.pass)
-                alert(single.pass)
+               // arr.push(single.email)
+               arr.push({
+                   emailt:single.email,
+                   idt: single.id,
+                   passwordt: single.pass
+               })
+
+               // arr2.push(single.pass)
+                //alert(single.pass)
+             
             })
-             if((find_email(emailstr)==true) && (find_password(passStr) == true)){
+             if(find_email(emailstr, passStr)==true){
+                 localStorage.setItem('idobj', emailstr)
+                 
+                 
                 alert('Login successful')
-                alert('welcome bro')
+               // alert('welcome bro')
                 arr = []
                 arr2 = []
                 window.location = 'Quiz_Page/add_quiz.html';
                 //return false;
 
             }else{
-                alert('incorrect')
+                alert('incorrect password or username')
                 arr = []
                 arr2 = []
             }
