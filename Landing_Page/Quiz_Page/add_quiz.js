@@ -87,7 +87,7 @@ $(document).ready(function () {
 
 
     $('#testPage').click(function () {
-        alert('alright, Let\'s do this!')
+       // swal('alright, Let\'s do this!')
     })
 
     // $('#Update').click(function(){
@@ -166,7 +166,7 @@ $(document).ready(function () {
                 data: updateQuestion,
                 dataType: 'JSON',
                 success: function (data) {
-                    alert('done!')
+                    swal('done!')
 
                 }
             })
@@ -198,7 +198,7 @@ $(document).ready(function () {
             let opt_2divu = opt2.val()
             let opt_3divu = opt3.val()
             let answerdivu = ans.val()
-            alert(urlq)
+           // alert(urlq)
 
             let updateQuestion = {
                 "question": questdivu,
@@ -217,7 +217,7 @@ $(document).ready(function () {
                 data: updateQuestion,
                 dataType: 'JSON',
                 success: function (data) {
-                    alert('done!')
+                    swal('done!')
 
                 }
             })
@@ -230,6 +230,7 @@ $(document).ready(function () {
     })
 
     $('#logoutbtn').click(function(){
+        swal('Signing out...')
         localStorage.clear();
         window.location = '../Landing_page&Login.html';
         return false;

@@ -2,7 +2,8 @@ $(document).ready(function(){
   let userid = localStorage.getItem('idobj')
   //alert(userid)
  // alert(typeof (userid))
- swal('Any fool can use a computer')
+ swal('Alright! Let\'s do this')
+ let numcount = 0;
  
 
     let myQuestions = [];
@@ -107,16 +108,18 @@ $(document).ready(function(){
       
         // show number of correct answers out of total
         resultsContainer.innerHTML = numCorrect + ' out of ' + myQuestions.length;
-        document.getElementById("ans").innerHTML = `answers:
-                `;
+        numcount = numCorrect
+        document.getElementById("ans").innerHTML = `answers:`;
+        
       }
        submitButton.addEventListener('click', showResults);
-   
+       //swal(numcount + ' out of ' + myQuestions.length)
        $('#logoutbtn').click(function(){
         localStorage.clear();
         window.location = '../Landing_page&Login.html';
         return false;
     })
+    
 
 
       
