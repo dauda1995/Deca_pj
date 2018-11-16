@@ -1,14 +1,6 @@
 #quiz{
-    margin-left: 20%;
-    margin-top: 5%
-}
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    margin-left: 1%;
+    margin-top: 1%
 }
 
 button{
@@ -83,12 +75,7 @@ button:hover{
     
    
     
-    #login{
-    left: 50%;
-    top: 50%;
-    margin-left:-210px;
-    margin-top:-158px;
-    } 
+   
 
  #results{
      font-family: sans-serif;
