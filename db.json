@@ -41,89 +41,86 @@
       "username": "dauda",
       "password": "kennedyy",
       "id": 10
+    },
+    {
+      "email": "dauda302943@sdjs.sjfk",
+      "username": "dauda933@gmail.com",
+      "password": "dauda",
+      "id": 11
     }
   ],
   "questions": [
     {
-      "question": "Is java related to javascript",
-      "a": "yes",
-      "b": "Nooooo!",
-      "c": "I don't know",
-      "answer": "a",
-      "email": "dauda933@gmail.com",
-      "id": 3
-    },
-    {
-      "question": "What is the latest version of ECMAScript?",
-      "a": "ES4",
-      "b": "ES6",
-      "c": "PS4",
-      "answer": "b",
-      "email": "dauda933@gmail.com",
-      "id": 4
-    },
-    {
-      "question": "what does the acronym \"AJAX\" mean?",
-      "a": "asynchronous javascript and XML",
-      "b": "advanced JSON asynchronised Xamari",
-      "c": "asynchronous javascript and xcode",
-      "answer": "a",
-      "email": "dauda933@gmail.com",
-      "id": 6
-    },
-    {
-      "question": "what does the .pop() method do to an array?",
-      "a": "it deletes the first indexed value of array",
-      "b": "it adds a value to the last array index",
-      "c": "it destroys the last indexed array value",
-      "answer": "c",
-      "email": "dauda933@gmail.com",
-      "id": 16
-    },
-    {
-      "question": "is localStorage a good idea?",
-      "a": "nope",
-      "b": "have you tried it",
-      "c": "yes",
-      "answer": "c",
-      "email": "dauda933@gmail.com",
-      "id": 17
-    },
-    {
-      "question": "what does the time and space relativity explain?",
-      "a": "time is not absolute",
-      "b": "space determines how time is percieved",
-      "c": "stop this nonsense!",
-      "answer": "a",
-      "email": "dauda1995@yahoo.co.uk",
-      "id": 18
-    },
-    {
-      "question": "are 'let' datatypes constant?",
-      "a": "yes",
-      "b": "no",
-      "c": "maybe",
-      "answer": "b",
-      "email": "dauda1995@yahoo.co.uk",
-      "id": 19
-    },
-    {
-      "question": "is this working for real",
-      "a": "yes",
-      "b": "no",
-      "c": "check",
-      "answer": "c",
-      "email": "",
-      "id": 20
-    },
-    {
-      "question": "what is today?",
-      "a": "Monday",
-      "b": "Tuesday",
-      "c": "Check the calendar",
+      "question": "What Fictional-African Country is the element Vibranium known for? ",
+      "a": "Turkey",
+      "b": "Sokovia",
+      "c": "Wakanda",
       "answer": "c",
       "email": "dauda933@gmail.com",
       "id": 21
+    },
+    {
+      "question": "I am tall when young and short when I am old. What am I?",
+      "a": "A candle",
+      "b": "Sense",
+      "c": "Account Balance",
+      "answer": "a",
+      "email": "dauda933@gmail.com",
+      "id": 27
+    },
+    {
+      "question": "\"Success is not final, failure is not fatal: it is the courage to continue that counts\", a quote from?",
+      "a": "Leonardo da'Vinci",
+      "b": "Winston Churchill",
+      "c": "The GreyWhite ",
+      "answer": "b",
+      "email": "dauda933@gmail.com",
+      "id": 22
+    },
+    {
+      "question": "Who's political views had an influence on  Fela Anikulapo Kuti's path to Activism?",
+      "a": "Martin Luther King. jnr?",
+      "b": "Malcom X",
+      "c": "Rosa Parks",
+      "answer": "b",
+      "email": "dauda933@gmail.com",
+      "id": 23
+    },
+    {
+      "question": "\"..Make you hear this one, War against indiscipline, ee-oh..\" what song has these lyrics ?",
+      "a": "Army Arrangement",
+      "b": "Beast of no nation",
+      "c": "Zombie",
+      "answer": "b",
+      "email": "dauda933@gmail.com",
+      "id": 24
+    },
+    {
+      "question": "\"Fela, wetin you go sing about? DEM GO WORRY ME..\" is a lyric to what song?",
+      "a": "Army Arrangement",
+      "b": "Beast of no nation",
+      "c": "Gentleman",
+      "answer": "b",
+      "email": "dauda933@gmail.com",
+      "id": 25
+    },
+    {
+      "question": "which of these names is not associated with \"The Beatles\"?",
+      "a": "George Harrison",
+      "b": "John Lenon",
+      "c": "Jimi Hendrix",
+      "answer": "c",
+      "email": "dauda933@gmail.com",
+      "id": 26
+    },
+    {
+      "question": " What will finally break the internet?",
+      "a": "Time",
+      "b": "Nothing",
+      "c": "This App!!",
+      "answer": "c",
+      "email": "dauda1995@yahoo.co.uk",
+      "id": 18
     }
   ]
 }

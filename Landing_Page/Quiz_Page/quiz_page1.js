@@ -110,6 +110,12 @@ $(document).ready(function(){
         resultsContainer.innerHTML = numCorrect + ' out of ' + myQuestions.length;
         numcount = numCorrect
         document.getElementById("ans").innerHTML = `answers:`;
+        swal({
+          title: `You scored 
+          ${numCorrect} out of ${myQuestions.length}`,
+          animation: true,
+          customClass: 'animated tada'
+        })
         
       }
        submitButton.addEventListener('click', showResults);
@@ -117,9 +123,9 @@ $(document).ready(function(){
        $('#logoutbtn').click(function(){
         localStorage.clear();
         window.location = '../Landing_page&Login.html';
-        return false;
+      
     })
-    
+
 
 
       

@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+   
+
     let userid = localStorage.getItem('idobj')
     swal({
         position: 'top-end',
@@ -8,6 +10,8 @@ $(document).ready(function () {
         showConfirmButton: false,
         timer: 1500
       })
+
+     
     //alert(typeof (userid))
    
     
@@ -79,8 +83,14 @@ $(document).ready(function () {
             }
             $.post('http://localhost:3000/questions', question_new, function (data) {
                // alert('done!')
+               location.reload();
             })
             clear()
+           
+           // window.location = 'add_quiz.html';
+            
+           
+            
         })
 
     })
@@ -167,6 +177,7 @@ $(document).ready(function () {
                 dataType: 'JSON',
                 success: function (data) {
                     swal('done!')
+                    location.reload()
 
                 }
             })
@@ -218,6 +229,8 @@ $(document).ready(function () {
                 dataType: 'JSON',
                 success: function (data) {
                     swal('done!')
+                    location.reload();
+
 
                 }
             })

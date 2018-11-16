@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    localStorage.clear()
     
 
     let arr = []
@@ -72,7 +73,7 @@ $(document).ready(function(){
                  localStorage.setItem('idobj', emailstr)
                  
                  
-                swal('Login successful')
+              //  swal('Login successful')
                // alert('welcome bro')
                 arr = []
                 arr2 = []
